@@ -1,5 +1,4 @@
 import React from "react";
-import { TransitionGroup } from "react-transition-group";
 import { FaMinusCircle } from "react-icons/fa";
 import { MdCancel } from "react-icons/md";
 
@@ -8,8 +7,12 @@ class Order extends React.Component {
     const item = this.props.items[key];
     const count = this.props.order[key];
     if (!item) return null;
+    const isAvailable = item && item.status === "available";
+
+    if (!isAvailable) {
+    }
     return (
-      <li key={key}>
+      <li key={key} className="orders">
         {item.name}
         <span>{count}</span>
         <FaMinusCircle onClick={() => this.props.removeFromOrder(key)} />
@@ -35,12 +38,10 @@ class Order extends React.Component {
     return (
       <div>
         <h2>Order</h2>
-        <TransitionGroup component="ul" className="order">
-          {orderIds.map(this.renderOrder)}
-        </TransitionGroup>
+        {orderIds.map(this.renderOrder)}
         <div className="total">
           Total : <span></span>
-          <strong class="total-count">{total}</strong>
+          <strong className="total-count">{total}</strong>
         </div>{" "}
       </div>
     );
