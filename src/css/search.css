@@ -1,0 +1,11 @@
+.search-list {
+  font-size: 6.25rem;
+
+  margin-left: 12.5rem;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-style: italic;
+}

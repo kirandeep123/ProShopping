@@ -1,0 +1,41 @@
+header.top {
+  text-align: center;
+}
+
+header.top h1 {
+  font-size: 9rem;
+  line-height: 1.1;
+}
+
+header.top h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffa500;
+  position: relative;
+  display: inline-block;
+}
+
+header.top h3 span {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem 0 1rem;
+}
+
+header.top h3:before,
+header.top h3:after {
+  display: block;
+  z-index: 1;
+  background: #000;
+  position: absolute;
+  width: 130%;
+  height: 1px;
+  content: "";
+  top: 0.312rem;
+  margin-left: -15%;
+}
+
+header.top h3:after {
+  top: auto;
+  bottom: 0.43rem;
+}

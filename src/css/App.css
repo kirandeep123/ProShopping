@@ -1,0 +1,27 @@
+@import "./base.css";
+@import "./header.css";
+@import "./order.css";
+@import "./menu.css";
+@import "./search.css";
+
+.shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 5vh;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.shopping-cart > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 4 auto;
+  flex: 1 4 auto;
+  padding: 2rem;
+  border: 1rem double orange;
+  position: relative;
+  background: #fff;
+  overflow: scroll;
+}

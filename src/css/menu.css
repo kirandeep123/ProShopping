@@ -1,0 +1,35 @@
+.menu {
+  border-bottom: 2px solid orange;
+  border-top: 1px solid orange;
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 5px;
+  clear: both;
+  overflow: scroll;
+}
+.menu p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.menu .item-name {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.menu .price {
+  font-size: 1.4rem;
+}
+.menu img {
+  float: left;
+  width: 9.3rem;
+  margin-right: 1rem;
+}
+.additional-desc {
+  margin-top: 1px;
+}
